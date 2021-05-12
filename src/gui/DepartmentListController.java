@@ -1,6 +1,6 @@
 package gui;
 
-import java.io.IOException;
+import java.io.IOException; 
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -86,6 +86,7 @@ public class DepartmentListController implements Initializable {
 			
 			DepartmentFormController controller = loader.getController();
 			controller.setDepartment(obj);
+			controller.setDepartmentService(new DepartmentService());
 			controller.updateFormData();
 			
 			Stage dialogStage = new Stage();
